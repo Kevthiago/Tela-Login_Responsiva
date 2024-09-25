@@ -25,6 +25,7 @@ Grnades telas: acima de 1200px
     #login{
         display: flex;
         width: 80vw;
+        height: 30vh;
     }
     #login #imagem{
         height: 100%;
@@ -45,6 +46,7 @@ Grnades telas: acima de 1200px
         display: flex;
         width: 50vw;
         max-width: 50%;
+        height: 40vh;
     }
     #login #imagem{
         width: 50%;
@@ -53,5 +55,13 @@ Grnades telas: acima de 1200px
     #login #formulario{
         width: 50%;
         height: 100%;
+    }
+    #login #formulario h1{
+        font-size: 2em;
+    }
+    
+    #login #formulario p{
+        font-size: 1.2em;
+        margin: 20px 0px;
     }
 }
