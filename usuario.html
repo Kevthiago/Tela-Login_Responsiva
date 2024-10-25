@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="/estilos/cadastro/cadastro.css">
+    <link rel="stylesheet" href="/estilos/cadastro/mediaqueryCadastro.css">
+    <title>Cadastro de Usuário</title>
+</head>
+<body>
+    <main>
+        <section class="cadastro">
+            <form action="#" method="post" autocomplete="on">
+                <h1>Cadastro de Usuário</h1>
+                <p>Preencha todos os dados abaixo:</p>
+                <div class="dados">
+                    <div class="campo">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Digite o nome..." maxlength="100">
+                    </div>
+                    <div class="campo">
+                        <label for="id">ID:</label>
+                        <input type="id" id="id" name="id" required placeholder=XXXXXXXX maxlength="8">
+                    </div>
+                    <div class="campo">
+                        <label for="cargo">Cargo:</label>
+                        <input type="cargo" id="cargo" name="cargo" required placeholder="Digite o cargo..." maxlength="8">
+                    </div>
+                    <div class="campo">
+                        <label for="cnpj">CPF:</label>
+                        <input type="text" id="cnpj" name="cnpj" required placeholder="Digite o CPF..." pattern="\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}" title="Formato: XX.XXX.XXX/XXXX-XX" maxlength="18">
+                    </div>
+                    <div class="campo">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="Digite o Email..." maxlength="100">
+                    </div>
+                    <div class="campo">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" required placeholder="(XX) XXXXX-XXXX" pattern="\(\d{2}\) \d{5}-\d{4}" title="Formato: (XX) XXXXX-XXXX" maxlength="15">
+                    </div>
+                    
+                    <div class="campo">
+                        <button type="submit">Cadastrar</button>
+                    </div>                  
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

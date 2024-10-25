@@ -12,56 +12,69 @@ Grnades telas: acima de 1200px
 /*
     Paleta de cores: 
     #A7CFF2
-    #324001
-    #465902
-    #AFBF30
-    #BFA77A
+    #1A237E
+    #003366
+    #0D47A1
+    #B0BEC5
 */
 
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    body{
-        background-image: linear-gradient(to top, #324001, #BFA77A);
+    body {
+        background: linear-gradient(to right, #003366, #006699);
+
     }
-    #login{
+
+    #login {
         display: flex;
         width: 80vw;
         height: 30vh;
     }
-    #login #imagem{
+
+    #login #imagem {
         height: 100%;
         width: 30%;
     }
 
-    #login #formulario{
+    #login #formulario {
         height: 100%;
         width: 70%;
+    }
+
+    #login #formulario p{
+        font-size: 14px;
     }
 }
 
 @media screen and (min-width: 992px) {
-    body{
-        background-image: linear-gradient(to top, #324001, #BFA77A);
+    body {
+        background: linear-gradient(to right, #003366, #006699);
+
     }
-    #login{
+
+    #login {
         display: flex;
         width: 50vw;
         max-width: 50%;
         height: 40vh;
     }
-    #login #imagem{
+
+    #login #imagem {
         width: 50%;
         height: 100%;
     }
-    #login #formulario{
-        width: 50%;
+
+    #login #formulario {
+        width: 60%;
         height: 100%;
     }
-    #login #formulario h1{
+
+    #login #formulario h1 {
         font-size: 2em;
     }
-    
-    #login #formulario p{
+
+    #login #formulario p {
         font-size: 1.2em;
-        margin: 20px 0px;
+        margin: 20px 0;
     }
 }

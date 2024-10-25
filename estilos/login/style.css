@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+/*
+    Paleta de cores: 
+    #A7CFF2
+    #1A237E
+    #003366
+    #0D47A1
+    #B0BEC5
+*/
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #1A237E; /* Azul escuro */
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#login {
+    align-self: center;
+    background-color: #003366; /* Azul profundo */
+    width: 100%;
+    max-width: 400px;
+    min-height: 500px;
+    max-height: 90vh;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+#login #imagem {
+    display: flex;
+    background: #003366 url(/img/pexels-sean-whang-25006-804269.jpg);
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+
+#login #formulario {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 10px;
+    gap: 10px;
+}
+
+#login #formulario h1 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 26px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    color: white; /* Cinza claro */
+}
+
+#login #formulario p {
+    font-size: 0.8em;
+    color: white; /* Cinza claro */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+form .campo {
+    display: flex;
+    background-color: #003366; /* Azul profundo */
+    width: 100%;
+    height: 40px;
+    margin: 5px 0px;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+form .campo i {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+form .campo input {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.15); /* Leve transparência branca */
+    color: white;
+    font-size: 1em;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+form .campo input:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+    outline: none;
+    border: 1px solid #0D47A1; /* Azul forte */
+}
+
+form .campo label {
+    display: none;
+}
+
+form input[type=submit] {
+    display: block;
+    border: none;
+    background-color: #0D47A1; /* Azul forte */
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    transition: .5s;
+    color: white; /* Texto branco */
+}
+
+form input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #1A237E; /* Azul escuro */
+}
+
+form .botao-forgot {
+    display: block;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    background-color: #B0BEC5; /* Cinza claro */
+    color: black;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #B0BEC5; /* Cinza claro */
+    padding-top: 5px;
+    margin-top: 5px;
+    margin-bottom: 10%;
+    transition: .5s;
+}
+
+form .botao-forgot:hover {
+    background-color: #BFA77A; /* Um leve tom dourado */
+}
+
+form .botao-forgot i {
+    font-size: 0.8em;
+}
+
+form .cadastro-submit {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    gap: 5px;
+}
+
+form .cadastro-submit button {
+    background: #0D47A1; /* Azul forte */
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+form .cadastro-submit button:hover {
+    background: #1A237E; /* Azul escuro */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}

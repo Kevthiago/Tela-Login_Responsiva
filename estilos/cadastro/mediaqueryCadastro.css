@@ -1,0 +1,48 @@
+/* Estilos para telas maiores */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body, html {
+        padding: 0;
+        background: linear-gradient(to right, #003366, #006699);
+    }
+
+    main {
+        padding: 20px; /* Aumenta o padding em telas médias */
+    }
+
+    .cadastro {
+        width: 100%;
+        max-width: 800px; /* Aumenta a largura máxima para telas médias */
+        overflow: hidden;
+    }
+
+    .cadastro h1 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .cadastro p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .cadastro button {
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body, html {
+        padding: 0;
+        background: linear-gradient(to right, #003366, #006699);
+    }
+
+    main {
+        padding: 30px; /* Aumenta o padding em telas grandes */
+    }
+
+    .cadastro {
+        max-width: 1000px; /* Aumenta a largura máxima para telas grandes */
+        overflow: hidden;
+    }
+}
